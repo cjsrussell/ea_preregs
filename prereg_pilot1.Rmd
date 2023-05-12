@@ -11,10 +11,10 @@ author:
   affiliation: 3
 date: "INSERT"
 output:
-  pdf_document: default
   prereg::prereg_pdf: default
-  html_document: default
-  word_document: default
+#  html_document: default
+#  word_document: default
+#  pdf_document: default
 affiliation:
 - id: 1
   institution: Queen's University Belfast
@@ -40,16 +40,12 @@ Explaining Atheism: Pilot 1
 <!-- Please give a brief description of your study, including some background, the purpose of the of the study, or broad research questions. The description should be no longer than the length of an abstract. It can give some context for the proposed study, but great detail is not needed here for your preregistration.
 
 Example: Though there is strong evidence to suggest that sugar affects taste preferences, the effect has never been demonstrated in brownies. Therefore, we will measure taste preference for four different levels of sugar concentration in a standard brownie recipe to determine if the effect exists in this pastry. -->
-
 ```
-
-
 The present work is part of the broader Explaining Atheism project, which looks to examine popular and scientific causes of belief/non-belief and how these vary across cultures.
 
-Across 3 stages we will examine variables which have been argued in popular and scientfiic discourse to cause belief and non-belief. In this initial pilot we will look at the largest number of varaibles in order to test some of the clearest hypotheses and to run explanatory tests to exclude possible variables for the later stages of the project which will have larger samples and a greater proportion of confirmatory tests.
+Across 3 stages we will examine variables which have been argued in popular and scientific discourse to cause belief and non-belief. In this initial pilot we will look at the largest number of variables in order to test some of the clearest hypotheses and to run explanatory tests to exclude possible variables for the later stages of the project which will have larger samples and a greater proportion of confirmatory tests.
 
-
-Pre-registrations for this initial pilot, and follow on pilots can be found on our Figshare (insert link), and on my personal GitHub (insert link).
+Pre-registrations for this initial pilot, and follow on pilots can be found on our pages on the Open Science Framework, our Figshare (insert link), and on my personal GitHub (insert link).
 
 ## Hypotheses
 
@@ -58,7 +54,15 @@ Pre-registrations for this initial pilot, and follow on pilots can be found on o
 
 Example: If taste affects preference, then mean preference indices will be higher with higher concentrations of sugar. -->
 ```
-Enter your response here.
+Whilst all of the variables included for testing in this initial pilot have scientific justification for their inclusion, some have a greater body of theoretical or empirical evidence in favour of **specific** directional hypotheses, or greater public interest. As such in the initial pilot we will test certain confirmatory hypotheses, and run exploratory analysis for
+
+### Confirmatory Hypotheses
+
+The following confirmatory hypotheses will be tested:
+
+### Planned Exploratory Analyses
+
+Exploratory statistical analysis will include, but not necessarily be limited to the following:
 
 # Design Plan
 
