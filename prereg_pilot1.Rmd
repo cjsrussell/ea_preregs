@@ -1,27 +1,28 @@
 ---
-title           : "My preregistration for the COS Preregistration Challenge"
-shorttitle      : "My preregistration"
-date            :  "INSERT"
-author: 
-  - name        : Connair J. S. Russell
-    affiliation : 1
-  - name        : Jon Lanman
-    affiliation : 1
-  - name        : Aiyana Willard
-    affiliation : 2
-  - name        : Adam Baimel
-    affiliation : 3
-
-
+title: "Explaining Atheism: Pilot 1 Preregistration"
+author:
+- name: Connair J. S. Russell
+  affiliation: 1
+- name: Jon Lanman
+  affiliation: 1
+- name: Aiyana Willard
+  affiliation: 2
+- name: Adam Baimel
+  affiliation: 3
+date: "INSERT"
+output:
+  pdf_document: default
+  prereg::prereg_pdf: default
+  html_document: default
+  word_document: default
 affiliation:
-  - id          : 1
-    institution : Queen's University Belfast
-  - id          : 2
-    institution : Brunel University London
-  - id          : 3
-    institution : Oxford Brookes University
-
-output: prereg::prereg_pdf
+- id: 1
+  institution: Queen's University Belfast
+- id: 2
+  institution: Brunel University London
+- id: 3
+  institution: Oxford Brookes University
+shorttitle: My preregistration
 ---
 
 # Study Information
@@ -40,6 +41,8 @@ Explaining Atheism: Pilot 1
 
 Example: Though there is strong evidence to suggest that sugar affects taste preferences, the effect has never been demonstrated in brownies. Therefore, we will measure taste preference for four different levels of sugar concentration in a standard brownie recipe to determine if the effect exists in this pastry. -->
 
+```
+
 
 The present work is part of the broader Explaining Atheism project, which looks to examine popular and scientific causes of belief/non-belief and how these vary across cultures.
 
@@ -47,8 +50,6 @@ Across 3 stages we will examine variables which have been argued in popular and 
 
 
 Pre-registrations for this initial pilot, and follow on pilots can be found on our Figshare (insert link), and on my personal GitHub (insert link).
-```
-Enter your response here.
 
 ## Hypotheses
 
