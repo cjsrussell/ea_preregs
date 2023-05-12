@@ -89,7 +89,7 @@ This question has a variety of possible answers. The key is for a researcher to 
 
 Example: We have a between subjects design with 1 factor (sugar by mass) with 4 levels. -->
 ```
-Enter your response here.
+This study uses a survey design.
 
 ## Randomization
 
@@ -98,7 +98,7 @@ Enter your response here.
 
 Example: We will use block randomization, where each participant will be randomly assigned to one of the four equally sized, predetermined blocks. The random number list used to create these four blocks will be created using the web applications available at https://random.org. -->
 ```
-Enter your response here.
+No randomisation is used.
 
 # Sampling Plan
 
