@@ -9,7 +9,7 @@ author:
   affiliation: 2
 - name: Adam Baimel
   affiliation: 3
-date: "INSERT"
+date: "INSERT DATE"
 output:
   prereg::prereg_pdf: default
 #  html_document: default
@@ -22,7 +22,7 @@ affiliation:
   institution: Brunel University London
 - id: 3
   institution: Oxford Brookes University
-shorttitle: My preregistration
+shorttitle: EA Prereg 1
 ---
 
 # Study Information
@@ -32,8 +32,6 @@ shorttitle: My preregistration
 ```{=html}
 Explaining Atheism: Pilot 1
 ```
-`r rmarkdown::metadata$title`
-
 ## Description
 
 ```{=html}
@@ -45,7 +43,9 @@ The present work is part of the broader Explaining Atheism project, which looks 
 
 Across 3 stages we will examine variables which have been argued in popular and scientific discourse to cause belief and non-belief. In this initial pilot we will look at the largest number of variables in order to test some of the clearest hypotheses and to run explanatory tests to exclude possible variables for the later stages of the project which will have larger samples and a greater proportion of confirmatory tests.
 
-Pre-registrations for this initial pilot, and follow on pilots can be found on our pages on the Open Science Framework, our Figshare (insert link), and on my personal GitHub (insert link).
+Additional preregistration for this initial pilot, and follow on pilots can be found on our pages on the Open Science Framework, our Figshare (insert link), and on my personal GitHub (insert link).
+
+This pre-registration is for analysis of our first pilot data, with analyses looking to include or exclude variables for later stages. Here we look at the most popular explanations of belief/non-belief and whether they predict a number of different measures related to belief/non-belief
 
 ## Hypotheses
 
@@ -54,15 +54,37 @@ Pre-registrations for this initial pilot, and follow on pilots can be found on o
 
 Example: If taste affects preference, then mean preference indices will be higher with higher concentrations of sugar. -->
 ```
-Whilst all of the variables included for testing in this initial pilot have scientific justification for their inclusion, some have a greater body of theoretical or empirical evidence in favour of **specific** directional hypotheses, or greater public interest. As such in the initial pilot we will test certain confirmatory hypotheses, and run exploratory analysis for
+The current pre-registration is for exploratory analyses, as such no explicit directional hypotheses are tested. We will instead be testing the hypotheses of our explanatory variables having an effect on one or more outcome variables.
 
-### Confirmatory Hypotheses
+Specifically, we will look at whether the following clusters of explanatory variables (see "Variables" below) have an effect on the following outcome variables:
 
-The following confirmatory hypotheses will be tested:
+*Morals/ Values:*
 
-### Planned Exploratory Analyses
+-   Belief in God
 
-Exploratory statistical analysis will include, but not necessarily be limited to the following:
+-   Agnosticism
+
+-   Religious Identity
+
+-   Religious Attendance
+
+-   Moral Vitalism
+
+*Cognitive Styles:*
+
+-   Belief in God
+
+-   Agnosticism
+
+-   Religious Identity
+
+-   Religious Attendance
+
+-   Religious Tokens
+
+-   Karma
+
+*Socialisation*
 
 # Design Plan
 
@@ -70,15 +92,13 @@ Exploratory statistical analysis will include, but not necessarily be limited to
 
 ## Study type
 
-**Observational Study**. Survey Study
+**Observational Study**
 
+Survey Study
 
 ## Blinding
 
-<!-- Blinding describes who is aware of the experimental manipulations within a study. Select all that apply. Is there any additional blinding in this study? -->
-
 No blinding is involved in this study.
-
 
 ## Study design
 
@@ -90,6 +110,8 @@ This question has a variety of possible answers. The key is for a researcher to 
 Example: We have a between subjects design with 1 factor (sugar by mass) with 4 levels. -->
 ```
 This study uses a survey design.
+
+This pilot will run 5 separate surveys, one for each of the explanatory variable clusters, in the UK, Japan and Brazil. Survey X will also be run in an additional sample in Denmark. The results in 16 independent survey samples.
 
 ## Randomization
 
@@ -104,23 +126,15 @@ No randomisation is used.
 
 <!-- In this section we’ll ask you to describe how you plan to collect samples, as well as the number of samples you plan to collect and your rationale for this decision. Please keep in mind that the data described in this section should be the actual data used for analysis, so if you are using a subset of a larger dataset, please describe the subset that will actually be used in your study. -->
 
+We will collect representative samples for each survey for each nation. This will be done by an independent survey company, and the samples will be representative for the national population by Age, Sex and Geographic Region.
+
 ## Existing data
 
 <!-- Preregistration is designed to make clear the distinction between confirmatory tests, specified prior to seeing the data, and exploratory analyses conducted after observing the data. Therefore, creating a research plan in which existing data will be used presents unique challenges. Please select the description that best describes your situation. Please do not hesitate to contact us if you have questions about how to answer this question (prereg@cos.io). -->
 
-**Registration prior to creation of data**. As of the date of submission of this research plan for preregistration, the data have not yet been collected, created, or realized.
+**Registration prior to creation of data**.
 
-
-## Explanation of existing data
-
-```{=html}
-<!-- If you indicate that you will be using some data that already exist in this study, please describe the steps you have taken to assure that you are unaware of any patterns or summary statistics in the data. This may include an explanation of how access to the data has been limited, who has observed the data, or how you have avoided observing any analysis of the specific data you will use in your study.
-
-An appropriate instance of using existing data would be collecting a sample size much larger than is required for the study, using a small portion of it to conduct exploratory analysis, and then registering one particular analysis that showed promising results. After registration, conduct the specified analysis on that part of the dataset that had not been investigated by the researcher up to that point.
-
-Example: An appropriate instance of using existing data would be collecting a sample size much larger than is required for the study, using a small portion of it to conduct exploratory analysis, and then registering one particular analysis that showed promising results. After registration, conduct the specified analysis on that part of the dataset that had not been investigated by the researcher up to that point. -->
-```
-Enter your response here.
+As of the date of submission of this research plan for preregistration, the data have not yet been collected, created, or realized.
 
 ## Data collection procedures
 
@@ -131,7 +145,9 @@ The answer to this question requires a specific set of instructions so that anot
 
 Example: Participants will be recruited through advertisements at local pastry shops. Participants will be paid $10 for agreeing to participate (raised to $30 if our sample size is not reached within 15 days of beginning recruitment). Participants must be at least 18 years old and be able to eat the ingredients of the pastries. -->
 ```
-Enter your response here.
+Participants are recruited by the independent survey company, Savanta Comres, from their pool of participants. Participants will be paid a local rate for their participation, and will be selected to meet representativeness requirements outlined above.
+
+Exclusion criteria
 
 ## Sample size
 
@@ -140,7 +156,15 @@ Enter your response here.
 
 Example: Our target sample size is 280 participants. We will attempt to recruit up to 320, assuming that not all will complete the total task. -->
 ```
-Enter your response here.
+The sample size used is 500 per survey per nation.
+
+Brazil = 2500
+
+UK = 2500
+
+Japan = 2500
+
+Denmark = 500
 
 ## Sample size rationale
 
@@ -149,33 +173,11 @@ Enter your response here.
 
 Example: We used the software program G*Power to conduct a power analysis. Our goal was to obtain .95 power to detect a medium effect size of .25 at the standard .05 alpha error probability. -->
 ```
-Enter your response here.
-
-## Stopping rule
-
-```{=html}
-<!-- If your data collection procedures do not give you full control over your exact sample size, specify how you will decide when to terminate your data collection. 
-
-You may specify a stopping rule based on p-values only in the specific case of sequential analyses with pre-specified checkpoints, alphas levels, and stopping rules. Unacceptable rationales include stopping based on p-values if checkpoints and stopping rules are not specified. If you have control over your sample size, then including a stopping rule is not necessary, though it must be clear in this question or a previous question how an exact sample size is attained.
-
-Example: We will post participant sign-up slots by week on the preceding Friday night, with 20 spots posted per week. We will post 20 new slots each week if, on that Friday night, we are below 320 participants. -->
-```
-Enter your response here.
+Samples are the maximally viable sample for the financial means of the project.
 
 # Variables
 
 <!-- In this section you can describe all variables (both manipulated and measured variables) that will later be used in your confirmatory analysis plan. In your analysis plan, you will have the opportunity to describe how each variable will be used. If you have variables which you are measuring for exploratory analyses, you are not required to list them, though you are permitted to do so. -->
-
-## Manipulated variables
-
-```{=html}
-<!-- Describe all variables you plan to manipulate and the levels or treatment arms of each variable. This is not applicable to any observational study. For any experimental manipulation, you should give a precise definition of each manipulated variable. This must include a precise description of the levels at which each variable will be set, or a specific definition for each categorical treatment. For example, “loud or quiet,” should instead give either a precise decibel level or a means of recreating each level. 'Presence/absence' or 'positive/negative' is an acceptable description if the variable is precisely described.
-
-Example: We manipulated the percentage of sugar by mass added to brownies. The four levels of this categorical variable are: 15%, 20%, 25%, or 40% cane sugar by mass. -->
-```
-Enter your response here.
-
-## Measured variables
 
 ```{=html}
 <!-- Describe each variable that you will measure. This will include outcome measures, as well as any predictors or covariates that you will measure. You do not need to include any variables that you plan on collecting if they are not going to be included in the confirmatory analyses of this study.
@@ -184,7 +186,91 @@ Observational studies and meta-analyses will include only measured variables. As
 
 Example: The single outcome variable will be the perceived tastiness of the single brownie each participant will eat. We will measure this by asking participants ‘How much did you enjoy eating the brownie’ (on a scale of 1-7, 1 being 'not at all', 7 being 'a great deal') and 'How good did the brownie taste' (on a scale of 1-7, 1 being 'very bad', 7 being 'very good'). -->
 ```
-Enter your response here.
+Please find below a list of each variable measured in the study. A background for each of these, along with their operationalisations, subscales, and scripts to score these can be found in the codebook accompanying the pre-registration.
+
+## Explanatory Variables
+
+#### Morals/ Values
+
+-   Individualism and Collectivism
+-   Rebelliousness
+-   Individual Choice Norms
+
+#### Cognitive Style
+
+-   Tolerance of Ambiguity
+-   Thinking Style
+-   Non-Verbal Reasoning
+-   Moralisation of Rationality
+-   Importance of Rationality
+
+#### Socialisation
+
+-   CREDs
+-   CRUDs
+-   Non-theistic Socialisation
+-   Normativity of Religion
+-   Religious Emphasis
+-   Familial Dysfunction
+
+#### Motivational
+
+-   Social Desirability
+-   Existential Security
+-   Need for Structure
+-   Death Anxiety
+-   Social Network Size
+-   Need for Meaning
+-   Disgust Sensitivity
+
+#### Cognitive Bias
+
+-   Anthropomorphism
+-   Mentalizing
+-   Dualism
+-   Pattern Perception
+-   Promiscuous Teleology
+-   Schizotypy
+-   Vividness of Mental Imagery
+-   Dissociative Absorption
+
+## Outcome Variables
+
+#### ISSP
+
+-   Belief in God (categorical)
+
+#### Religious Identity
+
+-   Religious Membership
+    -   If so which
+
+#### Religious Practice
+
+-   Service attendance
+-   Prayer frequency
+-   Religious objects
+
+#### Supernatural Belief
+
+-   Life After Death
+-   Astrology Belief
+-   Mystical Powers Belief
+-   Universal Forces Belief
+-   Karmic Belief
+-   Supernatural Beings Belief
+-   Afterlife Belief
+-   Evil Eye Belief
+-   Luck Belief
+
+#### General Belief
+
+-   Belief in God (continuous)
+-   Confidence in Belief
+-   Anti Religiosity
+-   Religious Apatheism
+-   Agnosticism
+-   Possibility of Knowing
 
 ## Indices
 
@@ -195,7 +281,7 @@ If you are using multiple pieces of data to construct a single variable, how wil
 
 Example: We will take the mean of the two questions above to create a single measure of 'brownie enjoyment.'  -->
 ```
-Enter your response here.
+Code and scoring methods are included for each variable in the accompanying codebook. For the primary confirmatory analyses the following
 
 # Analysis Plan
 
@@ -204,6 +290,8 @@ Enter your response here.
 
 A confirmatory analysis plan must state up front which variables are predictors (independent) and which are the outcomes (dependent), otherwise it is an exploratory analysis. You are allowed to describe any exploratory work here, but a clear confirmatory analysis is required. -->
 ```
+### Exploratory Analysis Plan
+
 ## Statistical models
 
 ```{=html}
