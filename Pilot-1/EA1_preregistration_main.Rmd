@@ -11,10 +11,9 @@ author:
   affiliation: 3
 date: "INSERT DATE"
 output:
-  prereg::prereg_pdf: default
-#  html_document: default
-#  word_document: default
-#  pdf_document: default
+  word_document: default
+  pdf_document: prereg::prereg_pdf
+  html_document: default
 affiliation:
 - id: 1
   institution: Queen's University Belfast
@@ -25,13 +24,18 @@ affiliation:
 shorttitle: EA Prereg 1
 ---
 
+```{r, echo=FALSE}
+
+library()
+
+```
+
 # Study Information
 
 ## Title
 
-```{=html}
-Explaining Atheism: Pilot 1
-```
+Explaining Atheism: Pilot 1 Preregistration
+
 ## Description
 
 ```{=html}
@@ -43,7 +47,7 @@ The present work is part of the broader Explaining Atheism project, which looks 
 
 Across 3 stages we will examine variables which have been argued in popular and scientific discourse to cause belief and non-belief. In this initial pilot we will look at the largest number of variables in order to test some of the clearest hypotheses and to run explanatory tests to exclude possible variables for the later stages of the project which will have larger samples and a greater proportion of confirmatory tests.
 
-Additional preregistration for this initial pilot, and follow on pilots can be found on our pages on the Open Science Framework, our Figshare (insert link), and on my personal GitHub (insert link).
+Additional preregistration for this initial pilot, and follow on pilots can be found on our pages on the [Open Science Framework](https://osf.io/df6m8/), our [Figshare](https://figshare.com/projects/Explaining_Atheism/157323), and on my personal [GitHub](https://github.com/cjsrussell/ea_preregs).
 
 This pre-registration is for analysis of our first pilot data, with analyses looking to include or exclude variables for later stages. Here we look at the most popular explanations of belief/non-belief and whether they predict a number of different measures related to belief/non-belief
 
@@ -58,33 +62,19 @@ The current pre-registration is for exploratory analyses, as such no explicit di
 
 Specifically, we will look at whether the following clusters of explanatory variables (see "Variables" below) have an effect on the following outcome variables:
 
-*Morals/ Values:*
+***Morals/ Values:***
 
--   Belief in God
+Belief in God; Agnosticism; Religious Identity; Religious Attendance; Moral Vitalism
 
--   Agnosticism
+***Cognitive Styles:***
 
--   Religious Identity
+Belief in God; Agnosticism; Religious Identity; Religious Attendance; Religious Tokens; Karma
 
--   Religious Attendance
+***Socialisation***
 
--   Moral Vitalism
+***Cognitive Biases***
 
-*Cognitive Styles:*
-
--   Belief in God
-
--   Agnosticism
-
--   Religious Identity
-
--   Religious Attendance
-
--   Religious Tokens
-
--   Karma
-
-*Socialisation*
+***Motivational***
 
 # Design Plan
 
@@ -92,9 +82,7 @@ Specifically, we will look at whether the following clusters of explanatory vari
 
 ## Study type
 
-**Observational Study**
-
-Survey Study
+**Observational (Survey) Study**
 
 ## Blinding
 
@@ -111,7 +99,7 @@ Example: We have a between subjects design with 1 factor (sugar by mass) with 4 
 ```
 This study uses a survey design.
 
-This pilot will run 5 separate surveys, one for each of the explanatory variable clusters, in the UK, Japan and Brazil. Survey X will also be run in an additional sample in Denmark. The results in 16 independent survey samples.
+This pilot will run 5 separate surveys, one for each of the explanatory variable clusters, in the UK, Japan and Brazil. Survey 5 will also be run in Denmark. The results in 16 independent survey samples.
 
 ## Randomization
 
@@ -120,9 +108,9 @@ This pilot will run 5 separate surveys, one for each of the explanatory variable
 
 Example: We will use block randomization, where each participant will be randomly assigned to one of the four equally sized, predetermined blocks. The random number list used to create these four blocks will be created using the web applications available at https://random.org. -->
 ```
-No randomisation is used.
+INSERT RANDOMISATION INFO
 
-# Sampling Plan
+## Sampling Plan
 
 <!-- In this section we’ll ask you to describe how you plan to collect samples, as well as the number of samples you plan to collect and your rationale for this decision. Please keep in mind that the data described in this section should be the actual data used for analysis, so if you are using a subset of a larger dataset, please describe the subset that will actually be used in your study. -->
 
@@ -134,7 +122,7 @@ We will collect representative samples for each survey for each nation. This wil
 
 **Registration prior to creation of data**.
 
-As of the date of submission of this research plan for preregistration, the data have not yet been collected, created, or realized.
+As of the date of submission of this preregistration, the data have not yet been collected, created, or analysed.
 
 ## Data collection procedures
 
@@ -147,7 +135,7 @@ Example: Participants will be recruited through advertisements at local pastry s
 ```
 Participants are recruited by the independent survey company, Savanta Comres, from their pool of participants. Participants will be paid a local rate for their participation, and will be selected to meet representativeness requirements outlined above.
 
-Exclusion criteria
+***Exclusion criteria***
 
 ## Sample size
 
@@ -174,6 +162,8 @@ Denmark = 500
 Example: We used the software program G*Power to conduct a power analysis. Our goal was to obtain .95 power to detect a medium effect size of .25 at the standard .05 alpha error probability. -->
 ```
 Samples are the maximally viable sample for the financial means of the project.
+
+\newpage
 
 # Variables
 
@@ -281,7 +271,7 @@ If you are using multiple pieces of data to construct a single variable, how wil
 
 Example: We will take the mean of the two questions above to create a single measure of 'brownie enjoyment.'  -->
 ```
-Code and scoring methods are included for each variable in the accompanying codebook. For the primary confirmatory analyses the following
+Code and scoring methods are included for each variable in the accompanying codebook.
 
 # Analysis Plan
 
@@ -304,7 +294,47 @@ This is perhaps the most important and most complicated question within the prer
 
 Example:  We will use a one-way between subjects ANOVA to analyze our results. The manipulated, categorical independent variable is 'sugar' whereas the dependent variable is our taste index. -->
 ```
-Enter your response here.
+To examine the possible relationships between our explanatory and our outcome variables we will run bayesian multiple regression models using the '*brms*' package.
+
+For binary outcomes we will use logistic regression. For example, the following logistic model of the binary "Religious Identification" outcome variable and Morals/Values explanatory variables might be specified roughly as follows:
+
+```{r, eval=FALSE}
+
+library("brms")
+
+exampleLogisticModel<- 
+  brm(formula = religiousIdentification ~ individualism +
+                                          rebelliousness +
+                                          choiceNorms,
+      prior = prior,
+      data = data, 
+      family = bernoulli(link = "logit"),
+      iter = 10000,
+      seed = 2023)
+
+```
+
+For ordinal outcomes (likert responses) we will use ordinal probit regression. For example, the following logistic model of the binary "Religious Identification" outcome variable and Morals/Values explanatory variables might be specified roughly as follows:
+
+```{r, eval=FALSE}
+
+exampleOrdinalModel<- 
+  brm(formula = beliefInGod ~ toleranceOfAmbiguity +
+                              thinkingStyle +
+                              nonVerbalReasoning +
+                              moralisationOfRationality +
+                              importanceOfRationality,
+      prior = prior,
+      data = data, 
+      family = cumulative("probit"),
+      iter = 10000,
+      seed = 2023)
+
+```
+
+### Priors
+
+We will set the following uninformative priors for our outcome variables:
 
 ## Transformations
 
