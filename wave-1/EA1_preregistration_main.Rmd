@@ -24,12 +24,6 @@ affiliation:
 shorttitle: EA Prereg 1
 ---
 
-```{r, echo=FALSE}
-
-library()
-
-```
-
 # Study Information
 
 ## Title
@@ -47,9 +41,9 @@ The present work is part of the broader Explaining Atheism project, which looks 
 
 Across 3 stages we will examine variables which have been argued in popular and scientific discourse to cause belief and non-belief. In this initial pilot we will look at the largest number of variables in order to test some of the clearest hypotheses and to run explanatory tests to exclude possible variables for the later stages of the project which will have larger samples and a greater proportion of confirmatory tests.
 
-Additional preregistration for this initial pilot, and follow on pilots can be found on our pages on the [Open Science Framework](https://osf.io/df6m8/), our [Figshare](https://figshare.com/projects/Explaining_Atheism/157323), and on my personal [GitHub](https://github.com/cjsrussell/ea_preregs).
-
 This pre-registration is for analysis of our first pilot data, with analyses looking to include or exclude variables for later stages. Here we look at the most popular explanations of belief/non-belief and whether they predict a number of different measures related to belief/non-belief
+
+Additional preregistrations for this stage testing specific hypotheses, along with preregistrations for future pilots, can be found on our pages on the [Open Science Framework](https://osf.io/df6m8/), our [Figshare](https://figshare.com/projects/Explaining_Atheism/157323), and on C. Russell's personal [GitHub](https://github.com/cjsrussell/ea_preregs).
 
 ## Hypotheses
 
@@ -59,22 +53,6 @@ This pre-registration is for analysis of our first pilot data, with analyses loo
 Example: If taste affects preference, then mean preference indices will be higher with higher concentrations of sugar. -->
 ```
 The current pre-registration is for exploratory analyses, as such no explicit directional hypotheses are tested. We will instead be testing the hypotheses of our explanatory variables having an effect on one or more outcome variables.
-
-Specifically, we will look at whether the following clusters of explanatory variables (see "Variables" below) have an effect on the following outcome variables:
-
-***Morals/ Values:***
-
-Belief in God; Agnosticism; Religious Identity; Religious Attendance; Moral Vitalism
-
-***Cognitive Styles:***
-
-Belief in God; Agnosticism; Religious Identity; Religious Attendance; Religious Tokens; Karma
-
-***Socialisation***
-
-***Cognitive Biases***
-
-***Motivational***
 
 # Design Plan
 
@@ -99,7 +77,7 @@ Example: We have a between subjects design with 1 factor (sugar by mass) with 4 
 ```
 This study uses a survey design.
 
-This pilot will run 5 separate surveys, one for each of the explanatory variable clusters, in the UK, Japan and Brazil. Survey 5 will also be run in Denmark. The results in 16 independent survey samples.
+This pilot will run 5 separate surveys, one for each of the explanatory variable clusters, in the UK and Brazil. Survey 5 will also be run in Denmark. The results in 11 independent survey samples.
 
 ## Randomization
 
@@ -108,7 +86,31 @@ This pilot will run 5 separate surveys, one for each of the explanatory variable
 
 Example: We will use block randomization, where each participant will be randomly assigned to one of the four equally sized, predetermined blocks. The random number list used to create these four blocks will be created using the web applications available at https://random.org. -->
 ```
-INSERT RANDOMISATION INFO
+Question items will be randomised *within* questonnaires, with the following questionnaires being exceptions:
+
+-   CREDs
+
+-   CRUDs
+
+-   Normativity of Religion
+
+-   Parental Circumstances
+
+-   Existential Security
+
+-   Pattern Perception
+
+-   Vividness of Mental Imagery
+
+-   ISSP
+
+-   Religious Identity
+
+-   Religious Practice
+
+-   Atheism Membership
+
+-   Demographics
 
 ## Sampling Plan
 
@@ -122,7 +124,7 @@ We will collect representative samples for each survey for each nation. This wil
 
 **Registration prior to creation of data**.
 
-As of the date of submission of this preregistration, the data have not yet been collected, created, or analysed.
+As of the date of submission of this preregistration data is currently being collection, the authors are not yet in possession of any data nor have any information about data collected thus far during data collection.
 
 ## Data collection procedures
 
@@ -144,13 +146,11 @@ Participants are recruited by the independent survey company, Savanta Comres, fr
 
 Example: Our target sample size is 280 participants. We will attempt to recruit up to 320, assuming that not all will complete the total task. -->
 ```
-The sample size used is 500 per survey per nation.
+The sample size used is 500 per survey per nation, resulting in samples per nation of:
 
 Brazil = 2500
 
 UK = 2500
-
-Japan = 2500
 
 Denmark = 500
 
@@ -176,42 +176,66 @@ Observational studies and meta-analyses will include only measured variables. As
 
 Example: The single outcome variable will be the perceived tastiness of the single brownie each participant will eat. We will measure this by asking participants ‘How much did you enjoy eating the brownie’ (on a scale of 1-7, 1 being 'not at all', 7 being 'a great deal') and 'How good did the brownie taste' (on a scale of 1-7, 1 being 'very bad', 7 being 'very good'). -->
 ```
-Please find below a list of each variable measured in the study. A background for each of these, along with their operationalisations, subscales, and scripts to score these can be found in the codebook accompanying the pre-registration.
+Please find below a list of each variable planned to be measured in the study. A background for each of these, along with the questionnaires from whcih they were derrived, descriptions, subscales, and scripts can be found in the codebook accompanying the pre-registration.
 
 ## Explanatory Variables
 
 #### Morals/ Values
 
--   Individualism and Collectivism
--   Rebelliousness
+-   Individualism & Collectivism
+-   Rebelliousness (complete)
+-   Rebelliousness (trolling)
+-   Rebelliousness (activism)
 -   Individual Choice Norms
 
 #### Cognitive Style
 
 -   Tolerance of Ambiguity
--   Thinking Style
+-   Cognitive Style (correct)
+-   Cognitive Style (intuitive)
 -   Non-Verbal Reasoning
 -   Moralisation of Rationality
 -   Importance of Rationality
 
 #### Socialisation
 
--   CREDs
--   CRUDs
+-   CRED Exposure
+-   CRED (caregiver)
+-   CRED (Group Leader)
+-   CRED (Group Member)
+-   CRED (Group)
+-   CRUD Exposure
+-   CRUD (Caregiver)
+-   CRUD (Group Leaders)
+-   CRUD (Group)
 -   Non-theistic Socialisation
--   Normativity of Religion
+-   Normativity of Religion (All)
+-   Normativity of Religion (Nation)
+-   Normativity of Religion (Ethnicity)
+-   Normativity of Religion (Peers)
+-   Normativity of Religion (Group)
 -   Religious Emphasis
--   Familial Dysfunction
+-   Parental Circumstances
+-   Parental Absence Reason
 
 #### Motivational
 
 -   Social Desirability
--   Existential Security
+-   Existential Security (Current)
+-   Existential Security (Future)
+-   Existential Security (Upbringing)
+-   Social Security
+-   Wealth Inequality
+-   Social Trust
 -   Need for Structure
 -   Death Anxiety
 -   Social Network Size
+-   Meaning in Life
 -   Need for Meaning
 -   Disgust Sensitivity
+-   Disgust Sensitivity (Core)
+-   Disgust Sensitivity (Animal)
+-   Disgust Sensitivity (Contamination)
 
 #### Cognitive Bias
 
@@ -219,48 +243,67 @@ Please find below a list of each variable measured in the study. A background fo
 -   Mentalizing
 -   Dualism
 -   Pattern Perception
+-   Pattern Perception (Long)
 -   Promiscuous Teleology
 -   Schizotypy
+-   Schizotypy (Reference)
+-   Schizotypy (Perceptual Experiences)
 -   Vividness of Mental Imagery
 -   Dissociative Absorption
 
 ## Outcome Variables
 
-#### ISSP
+#### Belief in God
 
--   Belief in God (categorical)
+-   Belief in God (Categorical)
+-   Belief in God (Continuous/Ordinal)
+-   Belief in God (Binary)
+-   Agnosticism (Continuous/ Ordinal)
+-   Agnostic Identity (binary)
 
-#### Religious Identity
+#### Atheism
 
--   Religious Membership
-    -   If so which
+-   Atheist Membership
+-   Atheist Identity
 
-#### Religious Practice
+#### Religiosity
 
--   Service attendance
--   Prayer frequency
--   Religious objects
+-   Religious Identification
+-   Religious Identity
+-   Religious Attendance
+-   Prayer Frequency
+-   Religious Objects
+-   Anti-religiosity
+
+#### Meta Belief
+
+-   Possibility of Knowing (God)
+-   Confidence in Belief
+-   Apatheism (God)
+-   Apatheism (Life Purpose)
+-   Apatheism (Combined)
+-   Possibility of Truth
+-   Naturalism
 
 #### Supernatural Belief
 
--   Life After Death
--   Astrology Belief
--   Mystical Powers Belief
--   Universal Forces Belief
--   Karmic Belief
--   Supernatural Beings Belief
--   Afterlife Belief
--   Evil Eye Belief
--   Luck Belief
-
-#### General Belief
-
--   Belief in God (continuous)
--   Confidence in Belief
--   Anti Religiosity
--   Religious Apatheism
--   Agnosticism
--   Possibility of Knowing
+-   Afterlife Existence
+-   Afterlife Punishment
+-   Afterlife Reward
+-   Reincarnation
+-   Astrology
+-   Mystical People
+-   Mystical Objects
+-   Good and Evil
+-   Universal Spirit or Life Force
+-   Karma
+-   Fate
+-   Supernatural Being Existence
+-   Good Supernatural Beings
+-   Harmful Supernatural Beings
+-   Evil Eye
+-   Spiuritual Experience (Personal)
+-   Lucky Object
 
 ## Indices
 
@@ -271,7 +314,7 @@ If you are using multiple pieces of data to construct a single variable, how wil
 
 Example: We will take the mean of the two questions above to create a single measure of 'brownie enjoyment.'  -->
 ```
-Code and scoring methods are included for each variable in the accompanying codebook.
+Coding and scoring methods are included for each variable in the accompanying codebook. Draft scoring scripts are also included.
 
 # Analysis Plan
 
@@ -281,6 +324,28 @@ Code and scoring methods are included for each variable in the accompanying code
 A confirmatory analysis plan must state up front which variables are predictors (independent) and which are the outcomes (dependent), otherwise it is an exploratory analysis. You are allowed to describe any exploratory work here, but a clear confirmatory analysis is required. -->
 ```
 ### Exploratory Analysis Plan
+
+We will look at the effects of our explanatory variables on various outcome variables. However, in order to examine which variables should be included in later rounds of our research, we will primarily look at the effects of our different clusters of explanatory variables (***bold***) on the following outcome variables:
+
+***Morals/ Values:***
+
+Belief in God; Religious Identity, Atheist Identity, Agnosticism; Religious Attendance
+
+***Cognitive Styles:***
+
+Belief in God; Religious Identity, Atheist Identity, Agnosticism; Religious Attendance
+
+***Socialisation***
+
+Belief in God; Religious Identity, Atheist Identity, Agnosticism; Religious Attendance
+
+***Cognitive Biases***
+
+Belief in God; Religious Identity, Atheist Identity, Agnosticism; Religious Attendance; Supernatural Being Existence
+
+***Motivational***
+
+Belief in God; Religious Identity, Atheist Identity, Agnosticism; Religious Attendance
 
 ## Statistical models
 
@@ -294,47 +359,90 @@ This is perhaps the most important and most complicated question within the prer
 
 Example:  We will use a one-way between subjects ANOVA to analyze our results. The manipulated, categorical independent variable is 'sugar' whereas the dependent variable is our taste index. -->
 ```
-To examine the possible relationships between our explanatory and our outcome variables we will run bayesian multiple regression models using the '*brms*' package.
+To examine the possible relationships between our explanatory and our outcome variables we will run bayesian multiple regression models in R using the '{brms}' package. We will run models for all the outcome and explanatory variable combinations noted in the above analysis plan, among others.
 
-For binary outcomes we will use logistic regression. For example, the following logistic model of the binary "Religious Identification" outcome variable and Morals/Values explanatory variables might be specified roughly as follows:
+Model specifications can be found in the attached Excel files.
+
+We will treat outcome variables that are single Likert scale measures as ordinal, and as such will use cumulative probit regression following the following structure:
+
+```{r, eval=FALSE}
+
+library("brms")
+
+
+exampleProbitModel <-
+  brm(formula = outcome_variable ~ explanatory_variable_1 +
+                                   explanatory_variable_2 +
+                                   explanatory_variable_3 +
+                                   explanatory_variable_n,
+      prior = priors,
+      data = data, 
+      family = cumulative(link = "probit"),
+      chains = 4,
+      cores = 4,
+      threads = 2,
+      iter = 3000,
+      warmup = 1000,
+      seed = 2023, 
+      backend = "cmdstanr")
+
+```
+
+For binary outcomes we will use logistic regression with the following format:
 
 ```{r, eval=FALSE}
 
 library("brms")
 
 exampleLogisticModel<- 
-  brm(formula = religiousIdentification ~ individualism +
-                                          rebelliousness +
-                                          choiceNorms,
-      prior = prior,
+  brm(formula = outcome_variable ~ explanatory_variable_1 +
+                                   explanatory_variable_2 +
+                                   explanatory_variable_3 +
+                                   explanatory_variable_n,
+      prior = priors,
       data = data, 
       family = bernoulli(link = "logit"),
-      iter = 10000,
-      seed = 2023)
+      chains = 4,
+      cores = 4,
+      threads = 2,
+      iter = 3000,
+      warmup = 1000,
+      seed = 2023, 
+      backend = "cmdstanr")
 
 ```
 
-For ordinal outcomes (likert responses) we will use ordinal probit regression. For example, the following logistic model of the binary "Religious Identification" outcome variable and Morals/Values explanatory variables might be specified roughly as follows:
+And for continuous outcomes we will use gaussian multiple regression:
 
 ```{r, eval=FALSE}
 
-exampleOrdinalModel<- 
-  brm(formula = beliefInGod ~ toleranceOfAmbiguity +
-                              thinkingStyle +
-                              nonVerbalReasoning +
-                              moralisationOfRationality +
-                              importanceOfRationality,
-      prior = prior,
+library("brms")
+
+exampleLogisticModel<- 
+  brm(formula = outcome_variable ~ explanatory_variable_1 +
+                                   explanatory_variable_2 +
+                                   explanatory_variable_3 +
+                                   explanatory_variable_n,
+      prior = priors,
       data = data, 
-      family = cumulative("probit"),
-      iter = 10000,
-      seed = 2023)
+      family = gaussian(),
+      chains = 4,
+      cores = 4,
+      threads = 2,
+      iter = 3000,
+      warmup = 1000,
+      seed = 2023, 
+      backend = "cmdstanr")
 
 ```
 
 ### Priors
 
 We will set the following uninformative priors for our outcome variables:
+
+For betas and intercepts we will set a normally distributed prior with a mean of 0 and a standard deviation of 1.
+
+For ordinal probit models we will set a normal distribution for the thresholds, following [Kurz](https://solomonkurz.netlify.app/blog/2021-12-29-notes-on-the-bayesian-cumulative-probit/).
 
 ## Transformations
 
@@ -343,7 +451,9 @@ We will set the following uninformative priors for our outcome variables:
 
 Example: The "Effect of sugar on brownie tastiness" does not require any additional transformations. However, if it were using a regression analysis and each level of sweet had been categorically described (e.g. not sweet, somewhat sweet, sweet, and very sweet), 'sweet' could be dummy coded with 'not sweet' as the reference category. -->
 ```
-Enter your response here.
+In some instances response variables are dummy coded binary variables from a categorical response option - see attached codebook for all variable definitions.
+
+As a default we will center likert response scores at the center of the scale, unless the scale has a meaningful interval (e.g. age, n years).
 
 ## Inference criteria
 
@@ -354,6 +464,10 @@ p-values, confidence intervals, and effect sizes are standard means for making a
 
 Example: We will use the standard p<.05 criteria for determining if the ANOVA and the post hoc test suggest that the results are significantly different from those expected if the null hypothesis were correct. The post-hoc Tukey-Kramer test adjusts for multiple comparisons. -->
 ```
+In the first instance, inferences about whether a variable has or does not have a theoretically relevant effect will be done based on examination of the posterior distributions of parameter estimates.
+
+More specifically we will examine the extent to which the credible intervals of these posterior distributions overlap with a Region of Practical Equivalence (ROPE), that is, a specified region we consider to be theoretically equivalent to zero. This will be done using the {bayestestR} package (<https://easystats.github.io/bayestestR/articles/region_of_practical_equivalence.html>) in R. For our Gaussian and Cumulative Probit models we will use the default range -0.1 to 0.1 for standardized effect sizes, which equates to a "negligible effect size", and -0.18 to 0.18 for logistic models.
+
 ## Data exclusion
 
 ```{=html}
@@ -361,7 +475,7 @@ Example: We will use the standard p<.05 criteria for determining if the ANOVA an
 
 Example: No checks will be performed to determine eligibility for inclusion besides verification that each subject answered each of the three tastiness indices. Outliers will be included in the analysis. -->
 ```
-Enter your response here.
+Participants who fail data quality checks are removed and replaced by the survey provider prior to our analysis. In the first instance outliers will not be removed, however sensitivity analysis will be run on any published final models.
 
 ## Missing data
 
@@ -370,7 +484,7 @@ Enter your response here.
 
 Example: If a subject does not complete any of the three indices of tastiness, that subject will not be included in the analysis. -->
 ```
-Enter your response here.
+No missing data will be in
 
 ## Exploratory analyses (optional)
 
@@ -379,7 +493,7 @@ Enter your response here.
 
 Example: We expect that certain demographic traits may be related to taste preferences. Therefore, we will look for relationships between demographic variables (age, gender, income, and marital status) and the primary outcome measures of taste preferences. -->
 ```
-Enter your response here.
+See Exploratory Data Analysis Plan above.
 
 # Other
 

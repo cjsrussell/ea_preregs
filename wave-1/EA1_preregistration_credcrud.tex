@@ -1,0 +1,505 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+
+\documentclass[]{article}
+\usepackage{amsmath,amssymb}
+\usepackage{lmodern}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+
+% use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+% use microtype if available
+\IfFileExists{microtype.sty}{%
+  \usepackage{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+  \usepackage[left=2.5in,bottom=1.25in,top=1.25in,right=1in]{geometry}
+  \ifxetex
+\usepackage[setpagesize=false, % page size defined by xetex
+            unicode=false, % unicode breaks when used with xetex
+            xetex]{hyperref}
+\else
+  \usepackage[unicode=true]{hyperref}
+\fi
+\hypersetup{breaklinks=true,
+bookmarks=true,
+pdfauthor={},
+pdftitle={Expaining Atheism - Pilot 1: CREDs/CRUDs},
+colorlinks=true,
+citecolor=blue,
+urlcolor=blue,
+linkcolor=magenta,
+pdfborder={0 0 0}}
+\urlstyle{same}  % don't use monospace font for urls
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+\providecommand{\tightlist}{%
+\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{0}
+
+% Customization for cos_prereg
+\usepackage{longtable,booktabs,threeparttable,tabularx}
+\linespread{1.5}
+\newcounter{question}
+\setcounter{question}{0}
+
+%%% Use protect on footnotes to avoid problems with footnotes in titles
+\let\rmarkdownfootnote\footnote%
+\def\footnote{\protect\rmarkdownfootnote}
+
+%%% Change title format to be more compact
+\usepackage{titling}
+
+\def\changemargin#1#2{\list{}{\rightmargin#2\leftmargin#1}\item[]}
+\let\endchangemargin=\endlist
+
+\setlength{\droptitle}{-2em}
+\title{Expaining Atheism - Pilot 1: CREDs/CRUDs}
+\pretitle{\begin{changemargin}{-8pc}{0pc} \centering\large Preregistration\\ \Huge}
+\posttitle{\end{changemargin}}
+  \author{
+          Connair J. S. Russell\textsuperscript{1},
+          Jon Lanman\textsuperscript{1},
+          Aiyana Willard\textsuperscript{2},
+          Adam Baimel\textsuperscript{3}          \\ \vspace{0.5cm}
+              \textsuperscript{1} Queen's University Belfast\\
+              \textsuperscript{2} Brunel University London\\
+              \textsuperscript{3} Oxford Brookes University      }
+
+  \def\affdep{{"", "", "", ""}}%
+  \def\affcity{{"", "", "", ""}}%
+  \preauthor{\begin{changemargin}{-8pc}{0pc} \centering\large}
+  \postauthor{\end{changemargin}}
+\date{INSERT DATE}
+\predate{\begin{changemargin}{-8pc}{0pc} \centering\large\emph}
+\postdate{\end{changemargin}}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\setlength{\headheight}{14.0pt}
+\renewcommand{\headrulewidth}{0pt}
+\lhead{}
+\rhead{\large\textsc{\MakeLowercase{EA Prereg 1}}}
+
+
+
+% Title settings
+\usepackage{titlesec}
+\titleformat{\section}[display]{\bfseries\Large}{\thesection}{}{}[]
+\titlespacing{\section}{0pc}{*3}{*1.5}
+\titleformat{\subsection}[leftmargin]{\titlerule\bfseries\filleft}{\thesubsection}{.5em}{}
+\titlespacing{\subsection}{8pc}{5ex plus .1ex minus .2ex}{1.5pc}
+
+
+% Redefines (sub)paragraphs to behave more like sections
+\ifx\paragraph\undefined\else
+\let\oldparagraph\paragraph
+\renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+\let\oldsubparagraph\subparagraph
+\renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+
+
+\begin{document}
+\maketitle
+\vspace{2pc}
+
+
+\ifPDFTeX
+  \newcommand\Question[2]{%
+   \leavevmode\par
+   \stepcounter{question}
+   \noindent
+   \textbf{\thequestion. #1}. #2\par}
+\else % if luatex or xetex
+  \NewCommandCopy{\oldQuestion}{\Question}
+  \renewcommand\Question[2]{%
+   \leavevmode\par
+   \stepcounter{question}
+   \noindent
+   \textbf{\thequestion. #1}. #2\par}
+\fi
+
+
+
+\newcommand\Answer[1]{%
+    \noindent
+    \textit{Registered response}: #1\par}
+
+\hypertarget{study-information}{%
+\section{Study Information}\label{study-information}}
+
+\hypertarget{title}{%
+\subsection{Title}\label{title}}
+
+EA Preregistration: Cognitive Style and Non-verbal Reasoning
+
+\hypertarget{description}{%
+\subsection{Description}\label{description}}
+
+This preregistration is part of a number of preregistrations for the
+Explaining Atheism project. Our other registrations can be found on the
+OSF here {[}ADD LINK{]}, with copies on our FigShare, and on my GitHub.
+
+This registration is for the testing of the measurement and effect of
+Credibility Enhancing Displays (CREDs), and Credibility Undermining
+Displays (CRUDs) on atheism/non-belief. Specifically, this element of
+our first pilot project will test the scales used for the measurement of
+CREDs and CRUDs, and the relationship between these measures and
+measures of non-belief.
+
+Credibility Enhancing Displays are costly displays made by a model,
+particularly those that reflect a statement made by that model. Displays
+that show a model walking the walk, or practicing what they preach, if
+you will. For example if a model says a blue mushroom is toxic and then
+avoids eating it even when hungry, or priestly celibacy would be CREDS.
+A number of studies have shown historical CRED exposure to predict
+religiosity (CITES). The present project looks to build upon this, and
+also update the measures for cross-cultural comparison. Conversely CRUDs
+are behaviours which undermine credibility. They are behaviours where a
+model might engage in behaviours which contradict their stated belief,
+such as breaking celibacy, or eating haram foods.
+
+\hypertarget{hypotheses}{%
+\subsection{Hypotheses}\label{hypotheses}}
+
+\textbf{CREDs}
+
+Lower historic CRED exposure will predict lower:
+
+\begin{enumerate}
+\def\labelenumi{(\roman{enumi})}
+\tightlist
+\item
+  Religious Identification
+\item
+  Belief in God
+\end{enumerate}
+
+and greater:
+
+\begin{enumerate}
+\def\labelenumi{(\roman{enumi})}
+\tightlist
+\item
+  Agnosticism
+\end{enumerate}
+
+\textbf{CRUDs}
+
+Greater historic CRUD exposure will predict lower:
+
+\begin{enumerate}
+\def\labelenumi{(\roman{enumi})}
+\tightlist
+\item
+  Religious Identification
+\item
+  Belief in God
+\end{enumerate}
+
+and greater:
+
+\begin{enumerate}
+\def\labelenumi{(\roman{enumi})}
+\tightlist
+\item
+  Atheist identification
+\end{enumerate}
+
+\hypertarget{design-plan}{%
+\section{Design Plan}\label{design-plan}}
+
+\hypertarget{study-type}{%
+\subsection{Study type}\label{study-type}}
+
+\textbf{Observational Study}. Data is collected from study subjects that
+are not randomly assigned to a treatment. This includes surveys, natural
+experiments, and regression discontinuity designs.
+
+\hypertarget{study-design}{%
+\subsection{Study design}\label{study-design}}
+
+This registration is for the analysis of data collected as part of our
+first pilot which is comprised of 5 separate surveys, one for each of
+the explanatory variable clusters noted in the main pre-registration
+(see here). This specific registration concerns our socialisation
+survey, and is run in the in the UK, Japan and Brazil.
+
+\hypertarget{randomization}{%
+\subsection{Randomization}\label{randomization}}
+
+Enter your response here.
+
+\hypertarget{sampling-plan}{%
+\section{Sampling Plan}\label{sampling-plan}}
+
+We will collect representative samples for each nation. This will be
+done by an independent survey company, and the samples will be
+representative for the national population by Age, Sex and Geographic
+Region.
+
+\hypertarget{existing-data}{%
+\subsection{Existing data}\label{existing-data}}
+
+\textbf{Registration prior to creation of data}. As of the date of
+submission of this research plan for preregistration, the data have not
+yet been collected, created, or realized.
+
+\hypertarget{data-collection-procedures}{%
+\subsection{Data collection
+procedures}\label{data-collection-procedures}}
+
+Participants are recruited by the independent survey company, Savanta
+Comres, from their pool of participants. Participants will be paid a
+local rate for their participation, and will be selected to meet
+representativeness requirements outlined above.
+
+\hypertarget{sample-size}{%
+\subsection{Sample size}\label{sample-size}}
+
+The sample size is 500 per nation.
+
+Brazil = 500
+
+UK = 500
+
+Japan = 500
+
+\hypertarget{sample-size-rationale}{%
+\subsection{Sample size rationale}\label{sample-size-rationale}}
+
+Samples are the maximally viable sample for the financial means of the
+project.
+
+\hypertarget{variables}{%
+\section{Variables}\label{variables}}
+
+\hypertarget{measured-variables}{%
+\subsection{Measured variables}\label{measured-variables}}
+
+The explanatory variables of primary interest, CRUDs and CREDs are part
+of a survey with the following explanatory variables. See attached
+variables document for definitions:
+
+\begin{itemize}
+\item
+  CREDs
+
+  \begin{itemize}
+  \item
+    CRED Score
+  \item
+    CRED Score (Parental)
+  \item
+    CRED Score (Group)
+  \item
+    CRED Score (Group Leader)
+  \item
+    CRED Score (Group Members)
+  \end{itemize}
+\item
+  CRUDs
+
+  \begin{itemize}
+  \item
+    CRUD Score
+  \item
+    CRUD Score (Parental)
+  \item
+    CRUD Score (Group)
+  \item
+    CRUD Score (Group Leader)
+  \item
+    CRUD Score (Group Members)
+  \end{itemize}
+\item
+  Non-theistic Socialisation
+\item
+  Normativity of Religion:
+
+  \begin{itemize}
+  \item
+    Normativity of Religion
+  \item
+    Normativity (Nation)
+  \item
+    Normativity (Ethnicity)
+  \item
+    Normativity (Peers)
+  \item
+    Normativity (Group)
+  \end{itemize}
+\item
+  Religious Emphasis
+\end{itemize}
+
+Similarly the outcome variables of interest are part of a wide range of
+response variables that are collected, see the attached codebook for all
+other variables. The outcome variables by which we will test our
+hypotheses are as follows. Again, see attached variables document for
+detailed defintions:
+
+\begin{itemize}
+\tightlist
+\item
+  Belief in God (continuous)
+\item
+  Belief in God (binary)
+\item
+  Religious Identification
+\item
+  Agnosticism
+\item
+  Atheist Identification
+\end{itemize}
+
+Details of what comprises each of these measures and scales can be found
+in the attached codebook.
+
+\hypertarget{indices}{%
+\subsection{Indices}\label{indices}}
+
+See attached codebook.
+
+\hypertarget{analysis-plan}{%
+\section{Analysis Plan}\label{analysis-plan}}
+
+We will run confirmatory analyses for each of our response variables
+noted above variables, and all the explanatory variables above. That is,
+we will have the following analyses:
+
+\emph{Confirmatory Analyses}
+
+\begin{longtable}[]{@{}lll@{}}
+\toprule\noalign{}
+Analysis & Explanatory Variables & Dependent Variable \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+CRED 1 & CRED Score & Belief in God (Continuous) \\
+CRED 2 & CRED Score & Belief in God (Binary) \\
+CRED 3 & CRED Score & Religious Identification \\
+CRED 5 & CRED Score & Agnosticism \\
+CRED 5 & CRED Score & Atheist Identification \\
+CRUD 1 & CRUD Score & Belief in God (Continuous) \\
+CRUD 2 & CRUD Score & Belief in God (Binary) \\
+CRUD 3 & CRUD Score & Religious Identification \\
+CRUD 5 & CRUD Score & Agnosticism \\
+CRUD 5 & CRUD Score & Atheist Identification \\
+\end{longtable}
+
+\hypertarget{statistical-models}{%
+\subsection{Statistical models}\label{statistical-models}}
+
+Bayesian Regression Models will be used to make inferences in the first
+instance.
+
+\hypertarget{transformations}{%
+\subsection{Transformations}\label{transformations}}
+
+Both Atheist Identification, and Belief in God (binary) dummy coded
+variables of a different question in the surveys. For details see the
+attached variables and codebook files.
+
+\hypertarget{inference-criteria}{%
+\subsection{Inference criteria}\label{inference-criteria}}
+
+Given that we will be using Bayesian statistical models, our inference
+criteria will be the 89\% credible intervals for parameter values, in
+the first instance.
+
+\hypertarget{data-exclusion}{%
+\subsection{Data exclusion}\label{data-exclusion}}
+
+An attention check is included in data collection, however participants
+who fail this are excluded from the data at data collection phase and
+replaced with a new participant, as such will not be in the dataset.
+
+\hypertarget{missing-data}{%
+\subsection{Missing data}\label{missing-data}}
+
+The data collection process does not allow missing data.
+
+\hypertarget{exploratory-analyses-optional}{%
+\subsection{Exploratory analyses
+(optional)}\label{exploratory-analyses-optional}}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.1090}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.7115}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.1795}}@{}}
+\toprule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Socialisation 1 & CRUD Score, CRUD Score, Normativity of Religion,
+Non-theistic Socialisation, Religious Emphasis & Belief in God
+(Continuous) \\
+Socialisation 2 & CRUD Score, CRUD Score, Normativity of Religion,
+Non-theistic Socialisation, Religious Emphasis & Belief in God
+(Binary) \\
+Socialisation 3 & CRUD Score, CRUD Score, Normativity of Religion,
+Non-theistic Socialisation, Religious Emphasis & Religious
+Identification \\
+Socialisation 5 & CRUD Score, CRUD Score, Normativity of Religion,
+Non-theistic Socialisation, Religious Emphasis & Agnosticism \\
+Socialisation 5 & CRUD Score, CRUD Score, Normativity of Religion,
+Non-theistic Socialisation, Religious Emphasis & Atheist
+Identification \\
+CRED 1 & CRED Score, CRED Score (Parental), CRED Score (Group), Cred
+Score (Group Leaders), CRED Score (Group Members) & Belief in God
+(Continuous) \\
+CRED 2 & CRED Score, CRED Score (Parental), CRED Score (Group), Cred
+Score (Group Leaders), CRED Score (Group Members) & Belief in God
+(Binary) \\
+CRED 3 & CRED Score, CRED Score (Parental), CRED Score (Group), Cred
+Score (Group Leaders), CRED Score (Group Members) & Religious
+Identification \\
+CRED 5 & CRED Score, CRED Score (Parental), CRED Score (Group), Cred
+Score (Group Leaders), CRED Score (Group Members) & Agnosticism \\
+CRED 5 & CRED Score, CRED Score (Parental), CRED Score (Group), Cred
+Score (Group Leaders), CRED Score (Group Members) & Atheist
+Identification \\
+\end{longtable}
+
+We will also run analyses of the psychometric properties of the CRED and
+CRUD scales, along with measurement invariance analyses.
+
+\hypertarget{other}{%
+\section{Other}\label{other}}
+
+\hypertarget{other-optional}{%
+\subsection{Other (Optional)}\label{other-optional}}
+
+This work is part of a larger scale project using the same data. See
+decription for further information.
+
+\hypertarget{references}{%
+\section{References}\label{references}}
+
+\hypertarget{section}{%
+\subsection{}\label{section}}
+
+\vspace{-2pc}
+\setlength{\parindent}{-0.5in}
+\setlength{\leftskip}{-1in}
+\setlength{\parskip}{8pt}
+
+\noindent
+
+\end{document}
